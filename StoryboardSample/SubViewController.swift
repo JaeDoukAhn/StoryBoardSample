@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  SubViewController.swift
 //  StoryboardSample
 //
 //  Created by ktds 20 on 2017. 8. 11..
@@ -8,21 +8,8 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SubViewController: UIViewController {
 
-    @IBOutlet weak var mySwitch: UISwitch!
-    @IBAction func nextScene(_ sender: Any) {
-        
-        if mySwitch.isOn {
-            self.performSegue(withIdentifier: "sub", sender: self)
-        }else{
-            self.performSegue(withIdentifier: "subsub", sender: self)
-        }
-        
-        
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
