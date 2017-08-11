@@ -9,6 +9,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Gray View Controller-->
+        <scene sceneID="rla-rr-Fgz">
+            <objects>
+                <viewController storyboardIdentifier="grayscene" id="GIV-h0-mk6" customClass="GrayViewController" customModule="StoryboardSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N0G-dk-qqg"/>
+                        <viewControllerLayoutGuide type="bottom" id="0M7-7b-ZfS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b0g-Sl-Esc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkQ-Ye-ytk">
+                                <rect key="frame" x="137" y="291" width="101" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="닫기"/>
+                                <connections>
+                                    <action selector="close:" destination="GIV-h0-mk6" eventType="touchUpInside" id="e45-Iw-Wem"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.71893387900458439" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JRR-HW-5A7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557.5999999999999" y="-397.15142428785612"/>
+        </scene>
         <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -34,7 +62,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.24683039200000001" green="0.25141478179999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Main" id="zT3-45-2qU"/>
+                    <navigationItem key="navigationItem" title="Main" id="zT3-45-2qU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rOg-vZ-nMt">
+                            <connections>
+                                <action selector="openAD:" destination="BYZ-38-t0r" id="Z6G-Lg-dTS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
